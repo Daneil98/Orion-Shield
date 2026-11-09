@@ -166,8 +166,8 @@ Model size: FP32 is 7.59 MB, and INT8 is 2.56 MB.
 
 ## Known limitations
 
-- Side_Face has no training data.
+- Side_Face deliberately has no training data.
 - There is no held-out test split. The validation split was used for all reported numbers.
-- The face gallery is too small to measure recognition accuracy.
-- The weights are FP32 and are not quantised. The INT8 and ONNX results are experiments, not the shipped configuration.
+- The face gallery is too small to measure recognition accuracy so I depended on InsightFace's official reported accuracy statistics.
+- The weights are FP32 and are not quantised. The INT8 and ONNX results are experiments.
 - Recognition is currently slower on GPU than on CPU.
